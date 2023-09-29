@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe.woff2') format('woff2'),
+        url('../fonts/Steppe.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+$Steppe: "Steppe", Georgia;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    max-width: 1424px;
+    padding: 0px 50px;
+    margin: 0 auto;
+}
+
+.dark_title {
+    color: #262626;
+    font-family: $Steppe;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: -1.44px;
+    text-transform: uppercase;
+
+    span {
+        color: #CE021C;
+        font-family: $Steppe;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 110%;
+        letter-spacing: -1.44px;
+        text-transform: uppercase;
+    }
+}
+
+.light_title {
+    color: #FFF;
+    font-family: $Steppe;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: -1.74px;
+    text-transform: uppercase;
+
+    span {
+        color: #CE021C;
+        font-family: $Steppe;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 110%;
+        letter-spacing: -1.74px;
+        text-transform: uppercase;
+    }
+}
+
+header {}
+
+#home {}
+
+#service {}
+
+#service2 {}
+
+#applications {}
+
+#comment {}
+
+#registration {}
+
+#center {}
+
+footer {}
+
+
+@import "_responsive";
