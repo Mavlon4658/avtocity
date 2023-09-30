@@ -59,6 +59,116 @@
   text-transform: uppercase;
 }
 
+#applications {
+  display: none;
+  margin-top: 168px;
+  padding-bottom: 40px;
+  margin-bottom: 166px;
+  overflow-y: hidden;
+  position: relative;
+}
+#applications .application_bg {
+  background: #262626;
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  z-index: -1;
+}
+#applications .application_wrapper {
+  display: flex;
+  height: 100%;
+}
+#applications .application_left {
+  position: relative;
+  padding-top: 136px;
+  flex: 2;
+}
+#applications .application_left .application_img {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#applications .application_left .application_title {
+  max-width: 505px;
+  margin-bottom: 64px;
+}
+#applications .application_left .application_btns {
+  display: flex;
+  align-items: center;
+}
+#applications .application_left .application_btns .apple_btn {
+  padding: 32px 20px;
+  border: 1px solid #FFF;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Onest", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+#applications .application_left .application_btns .apple_btn svg {
+  transform: translateY(-3px);
+  margin-left: 10px;
+}
+#applications .application_left .application_btns .playmarket_btn {
+  padding: 32px 20px;
+  border: 1px solid #FFF;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Onest", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+#applications .application_left .application_btns .playmarket_btn svg {
+  margin-left: 10px;
+}
+#applications .application_right {
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+#applications .application_right h3 {
+  max-width: 235px;
+  color: #FFF;
+  font-family: "Steppe", Georgia;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%; /* 24.2px */
+  letter-spacing: -0.66px;
+  text-transform: uppercase;
+  margin-top: 34px;
+}
+#applications .card_red {
+  padding-left: 123px;
+  width: 420px;
+  height: 100%;
+  background: #CE021C;
+  padding-top: 42px;
+  padding-bottom: 32px;
+}
+#applications .card_grey {
+  padding-left: 123px;
+  width: 420px;
+  position: absolute;
+  height: 100%;
+  background: #313131;
+  padding-top: 42px;
+  padding-bottom: 32px;
+}
+
 #comment .comment_wrapper {
   margin-top: 43px;
   display: flex;
@@ -164,23 +274,55 @@
   letter-spacing: 0.48px;
   text-transform: uppercase;
 }
+#comment .comment_full {
+  margin-top: 50px;
+}
+#comment .comment_full .comment_full_btn {
+  padding: 31px 24px 31px 34px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 652px;
+  align-items: center;
+  border: 1px solid #CE021C;
+  color: #262626;
+  font-family: "Onest", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
 
 #registration {
-  display: none;
+  overflow-x: hidden;
+  margin-top: 151px;
   padding-bottom: 69px;
   background: #F6F6F6;
   position: relative;
 }
 #registration .registration_img {
   position: absolute;
-  left: 50%;
   top: 0;
+  left: 50%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 #registration .registration_text {
-  width: 40%;
+  position: relative;
+  z-index: 2;
+}
+#registration .registration_text .down_icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: -20px;
+  width: 62px;
+  height: 62px;
+  background: #262626;
 }
 #registration .registration_text .registration_title {
   padding-top: 141px;
@@ -484,6 +626,37 @@ footer .footer_wrapper_bottom p {
     width: 150px;
     height: 45px;
   }
+  #registration {
+    overflow-x: hidden;
+  }
+  #registration::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 24, 12, 0.9);
+    z-index: 5;
+  }
+  #registration .registration_img {
+    background-color: rgba(23, 24, 12, 0.4);
+    left: 0;
+  }
+  #registration .registration_text .form {
+    flex-direction: column;
+  }
+  #registration .registration_text .form .phone_input {
+    width: 60%;
+  }
+  #registration .registration_text .form .data_input {
+    width: 60%;
+  }
+  #registration .registration_text .form .form_btn {
+    width: 60%;
+  }
+  #registration .registration_text .form_bottom {
+    margin-left: 0;
+  }
 }
 @media (max-width: 576px) {
   .dark_title {
@@ -497,5 +670,8 @@ footer .footer_wrapper_bottom p {
   }
   #comment .comment_wrapper .comment_card p {
     font-size: 16px;
+  }
+  #comment .comment_full .comment_full_btn {
+    padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
