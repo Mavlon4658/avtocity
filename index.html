@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +13,628 @@
     <!-- css file -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
     <!-- Header -->
     <header>
-        <div class="main_container">
-
+        <div class="main_container header_top">
+            <a href="#" class="left">
+                <img src="./images/play.svg" alt="">
+                <span>Наши центры на карте</span>
+            </a>
+            <ul>
+                <li>
+                    <a href="#">О центре</a>
+                </li>
+                <li>
+                    <a href="#">Наши проекты</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#">Корпоративным клиентам</a>
+                </li>
+                <li>
+                    <a href="#">Бонусная система</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M0 16C0.171967 15.3712 0.335585 14.7742 0.498536 14.1768C0.695213 13.4562 0.894226 12.736 1.08489 12.0137C1.10353 11.936 1.09456 11.8542 1.05951 11.7823C0.291508 10.3879 -0.0424073 8.8926 0.091159 7.31251C0.282493 5.05056 1.27689 3.19265 3.03296 1.75247C4.00965 0.948143 5.1716 0.400223 6.41352 0.158356C10.124 -0.579599 13.6929 1.31905 15.2219 4.65754C15.7925 5.90538 16.0089 7.21767 15.9027 8.57972C15.6359 12.0054 13.1025 14.9211 9.748 15.6691C7.85704 16.0905 6.04822 15.8431 4.32154 14.9679C4.24451 14.9322 4.15779 14.9233 4.07511 14.9425C2.78386 15.2764 1.49394 15.6143 0.204022 15.9519C0.146589 15.9659 0.0888216 15.9786 0 16ZM1.91534 14.106C1.99147 14.0877 2.04891 14.0746 2.10601 14.0596C2.80723 13.8763 3.50845 13.6966 4.20968 13.5056C4.35126 13.4672 4.45844 13.489 4.58199 13.5621C6.11032 14.4677 7.74484 14.7358 9.47953 14.3454C13.186 13.5107 15.4302 9.60384 14.2879 5.98285C13.2471 2.68443 9.95369 0.773763 6.56578 1.50838C3.77158 2.11577 1.55772 4.56271 1.41814 7.64976C1.36037 8.92599 1.64053 10.1348 2.30836 11.2267C2.51973 11.5723 2.55679 11.8611 2.43291 12.2371C2.23356 12.8442 2.08864 13.4696 1.91534 14.106Z"
+                                fill="white" />
+                            <path
+                                d="M3.95107 6.14593C3.96276 5.48344 4.22154 4.93849 4.68936 4.48403C4.75733 4.41419 4.83879 4.3589 4.9288 4.32153C5.01881 4.28416 5.11548 4.26549 5.21293 4.26665C5.32413 4.26665 5.43632 4.28335 5.54685 4.27233C5.78059 4.24929 5.91416 4.36416 5.99597 4.56284C6.21568 5.08909 6.44274 5.61267 6.6471 6.14493C6.68417 6.24143 6.66246 6.3957 6.60703 6.48552C6.4566 6.71803 6.292 6.94107 6.11417 7.15336C6.00799 7.28492 5.99931 7.40179 6.08512 7.54604C6.73192 8.63194 7.63115 9.42165 8.8102 9.88746C8.96982 9.95057 9.10004 9.92553 9.20923 9.78728C9.40558 9.53952 9.60993 9.29843 9.8016 9.04633C9.91179 8.9004 10.0407 8.84597 10.2043 8.92144C10.772 9.18857 11.3356 9.45571 11.8956 9.73586C11.9544 9.76525 12.0088 9.86475 12.0111 9.93387C12.0338 10.5232 11.8625 11.0168 11.3373 11.3604C10.6835 11.7878 9.99694 11.8252 9.267 11.6201C7.39474 11.0946 6.00431 9.92386 4.88804 8.37849C4.52073 7.8676 4.18214 7.34135 4.03922 6.7176C3.99448 6.5316 3.97912 6.33727 3.95107 6.14593Z"
+                                fill="white" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_1_378)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8.28662 5.90595C7.5085 6.2296 5.95336 6.89946 3.62119 7.91555C3.24249 8.06615 3.0441 8.21348 3.02604 8.35754C2.99552 8.601 3.30041 8.69687 3.71558 8.82742C3.77205 8.84517 3.83057 8.86357 3.89056 8.88307C4.29902 9.01585 4.84848 9.17118 5.13412 9.17735C5.39323 9.18295 5.68242 9.07613 6.00169 8.85689C8.1807 7.386 9.30552 6.64254 9.37614 6.62651C9.42596 6.6152 9.495 6.60099 9.54178 6.64256C9.58855 6.68414 9.58395 6.76288 9.579 6.784C9.5488 6.91276 8.352 8.02541 7.73267 8.6012C7.5396 8.78069 7.40265 8.90801 7.37465 8.93709C7.31193 9.00223 7.24802 9.06385 7.18658 9.12307C6.80711 9.48889 6.52254 9.76321 7.20234 10.2112C7.52902 10.4265 7.79043 10.6045 8.05123 10.7821C8.33604 10.9761 8.62012 11.1695 8.98767 11.4104C9.08132 11.4718 9.17075 11.5356 9.25786 11.5977C9.58931 11.834 9.8871 12.0463 10.255 12.0124C10.4688 11.9928 10.6896 11.7917 10.8017 11.1922C11.0667 9.77543 11.5877 6.70564 11.7081 5.44065C11.7186 5.32982 11.7054 5.18798 11.6947 5.12572C11.684 5.06345 11.6618 4.97474 11.5808 4.90907C11.485 4.83129 11.337 4.81489 11.2708 4.81606C10.9699 4.82136 10.5083 4.98188 8.28662 5.90595Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_378">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Telegram
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header_bottom">
+            <div class="main_container">
+                <a href="#" class="logo">
+                    <span class="bg_logo"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="244" height="36" viewBox="0 0 244 36" fill="none">
+                        <g clip-path="url(#clip0_1_586)">
+                            <path
+                                d="M36.9577 21.1334C35.6696 24.7866 30.4614 26.5283 26.4367 25.8619C25.5127 25.7088 22.1563 25.1525 20.3717 22.2068C19.4234 20.6425 19.3207 19.0688 19.3301 18.2512C19.2125 16.9221 19.1714 14.6409 19.8789 12.6435C19.9704 12.3822 20.1552 11.8296 20.0674 11.1333C19.892 9.71833 18.7346 8.53109 17.1591 8.40228C16.0166 8.30708 15.1393 8.80363 14.2376 9.39352C13.476 9.89194 12.6285 9.88447 12.0722 9.07244C11.5887 8.36681 11.6746 7.62759 12.3765 7.0209C12.664 6.77262 12.9048 6.46648 13.1549 6.17713C14.3664 4.76962 14.4542 2.99995 13.3771 1.73057C12.1693 0.306253 10.6049 0.104646 8.88382 1.22095C4.46338 4.08826 1.51954 7.9972 0.459234 13.2353C-0.987488 20.3886 0.976319 26.5152 6.42719 31.2623C13.6104 37.5196 23.2465 37.2807 29.9145 32.3021C31.5647 31.07 35.8096 27.5232 36.9521 21.7364C37.0473 21.251 37.1126 20.7955 37.1555 20.3755C37.0771 20.7862 36.9819 21.0662 36.9577 21.1353V21.1334Z"
+                                fill="#4F5051" />
+                            <path
+                                d="M20.3717 22.2087C22.1563 25.1544 25.5146 25.7107 26.4367 25.8638C30.4614 26.5302 35.6696 24.7885 36.9577 21.1353C36.9819 21.0662 37.0771 20.7862 37.1555 20.3756C37.3273 19.4814 37.4281 17.9619 36.5769 16.6178C35.4195 14.7884 33.0039 14.0679 31.0961 14.1631C26.0634 14.4169 23.4668 20.4148 20.648 19.4049C19.989 19.1696 19.5709 18.6414 19.3301 18.2549C19.3226 19.0726 19.4234 20.6462 20.3717 22.2106V22.2087Z"
+                                fill="#A2A2A3" />
+                            <path
+                                d="M19.3301 4.28229C20.5126 4.28229 21.4713 3.32367 21.4713 2.14115C21.4713 0.958623 20.5126 0 19.3301 0C18.1476 0 17.189 0.958623 17.189 2.14115C17.189 3.32367 18.1476 4.28229 19.3301 4.28229Z"
+                                fill="#A2A2A3" />
+                            <path
+                                d="M26.1978 12.9531C27.0339 12.9531 27.7117 12.2753 27.7117 11.4392C27.7117 10.6031 27.0339 9.92529 26.1978 9.92529C25.3617 9.92529 24.6839 10.6031 24.6839 11.4392C24.6839 12.2753 25.3617 12.9531 26.1978 12.9531Z"
+                                fill="#4F5051" />
+                            <path
+                                d="M33.325 9.92332C34.3653 9.92332 35.2085 9.08003 35.2085 8.03979C35.2085 6.99954 34.3653 6.15625 33.325 6.15625C32.2848 6.15625 31.4415 6.99954 31.4415 8.03979C31.4415 9.08003 32.2848 9.92332 33.325 9.92332Z"
+                                fill="#A2A2A3" />
+                            <path
+                                d="M84.0685 29.1586H75.8735L74.8188 26.4183H66.1385L65.0838 29.1586H56.8888L64.156 6.8418H76.8013L84.0685 29.1586ZM72.6328 20.7359L70.4786 11.7102L68.3226 20.7359H72.6328Z"
+                                fill="#CE021C" />
+                            <path
+                                d="M85.7803 29.1586L78.5131 6.8418H86.708C89.1759 13.2578 90.574 17.8873 92.1029 24.2902L97.4978 6.8418H105.695L98.4274 29.1586H85.7821H85.7803Z"
+                                fill="#CE021C" />
+                            <path d="M114.651 12.4625H106.796V6.8418H130.406V12.4625H122.551V29.1586H114.651V12.4625Z"
+                                fill="#CE021C" />
+                            <path
+                                d="M151.047 6.84375C154.291 6.84375 156.946 9.49825 156.946 12.7426V23.2617C156.946 26.5005 154.301 29.1513 151.064 29.1606H137.414C134.177 29.1513 131.532 26.5005 131.532 23.2617V12.7426C131.532 9.49825 134.187 6.84375 137.431 6.84375H151.047ZM149.048 22.1603V13.844C149.048 13.1309 148.208 12.5261 147.216 12.5261H141.263C140.272 12.5261 139.432 13.1309 139.432 13.844V22.1603C139.432 22.8753 140.272 23.4782 141.263 23.4782H147.216C148.208 23.4782 149.048 22.8734 149.048 22.1603Z"
+                                fill="#CE021C" />
+                            <path
+                                d="M158.24 12.9984C158.24 12.5186 158.234 12.0538 158.24 11.6039V12.7426C158.24 9.49825 160.894 6.84375 164.138 6.84375H181.032V12.5261H167.971C166.98 12.5261 166.14 13.1291 166.14 13.844V22.1603C166.14 22.8753 166.98 23.4782 167.971 23.4782H181.032V29.1606H164.138C160.894 29.1606 158.24 26.5061 158.24 23.2617V24.4004C158.234 23.9524 158.24 23.4857 158.24 23.006V13.0002V12.9984Z"
+                                fill="#4F5051" />
+                            <path d="M182.233 29.1586V6.8418H190.133V29.1586H182.233Z" fill="#4F5051" />
+                            <path d="M199.106 12.4625H191.251V6.8418H214.861V12.4625H207.006V29.1586H199.106V12.4625Z"
+                                fill="#4F5051" />
+                            <path
+                                d="M234.981 6.8418H243.178L233.538 21.6207V29.1586H225.638V21.6226L215.998 6.84366H224.193L229.588 16.0709L234.983 6.84366L234.981 6.8418Z"
+                                fill="#4F5051" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_586">
+                                <rect width="243.176" height="36" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <div class="menues">
+                    <button class="bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#">услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">акции</a>
+                        </li>
+                        <li>
+                            <a href="#">парковка</a>
+                        </li>
+                        <li>
+                            <a href="#">контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">8 843 526-53-98</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="light_button">Приложение</a>
+                    <a href="#" class="red_button">Онлайн запись</a>
+                </div>
+            </div>
         </div>
     </header>
     <!-- End header  -->
 
     <!-- Home -->
-    <section id="home"></section>
+    <section id="home">
+        <div class="swiper home_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="main_container">
+
+                        <div class="subtitle">Бескомпромиссное качество выполняемых работ</div>
+                        <div class="light_title">
+                            <span>Avto City</span> – ОСОБЫЙ УХОД ЗА ЛЮБИМЫМ АВТОМОБИЛЕМ
+                        </div>
+                        <a href="#" class="red_button">Запись на детейлинг</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main_container">
+
+                        <div class="subtitle">Бескомпромиссное качество выполняемых работ</div>
+                        <div class="light_title">
+                            <span>Avto City</span> – ОСОБЫЙ УХОД ЗА ЛЮБИМЫМ АВТОМОБИЛЕМ
+                        </div>
+                        <a href="#" class="red_button">Запись на детейлинг</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main_container">
+
+                        <div class="subtitle">Бескомпромиссное качество выполняемых работ</div>
+                        <div class="light_title">
+                            <span>Avto City</span> – ОСОБЫЙ УХОД ЗА ЛЮБИМЫМ АВТОМОБИЛЕМ
+                        </div>
+                        <a href="#" class="red_button">Запись на детейлинг</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-swiper-pagination"></div>
+        <div class="home-slider-buttons">
+            <button class="prev_button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 19.5L7.5 12L15 4.5" stroke="white" stroke-width="1.5" stroke-linecap="square"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button class="next_button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 19.5L7.5 12L15 4.5" stroke="white" stroke-width="1.5" stroke-linecap="square"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
     <!-- End home -->
-    
+
     <!-- Service -->
-    <section id="service"></section>
+    <section id="service">
+        <div class="main_container complect">
+            <div class="left_complect">
+                <div class="dark_title">
+                    Сеть авто
+                    <span>моечных</span>
+                    комплексов
+                </div>
+                <div class="buttons">
+                    <a href="#" class="light_button">Все центры</a>
+                    <div class="slider_buttons">
+                        <button class="prev_button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19.5L7.5 12L15 4.5" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="square" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="next_button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19.5L7.5 12L15 4.5" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="square" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper complect_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/complect_slideer.png" alt="">
+                        <div class="clider_in">
+                            <div class="slider_title">
+                                <span>автомойка</span> спартаковская 6
+                            </div>
+                            <div class="slider_link_1">
+                                <a href="#">круглосуточно</a>
+                            </div>
+                            <div class="slider_subtitle">Профессиональная мойка кузова и уходу за вашим автомобилем
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="red_button">Онлайн запись</a>
+                                <a href="#" class="dark_button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/complect_slideer.png" alt="">
+                        <div class="clider_in">
+                            <div class="slider_title">
+                                <span>автомойка</span> спартаковская 6
+                            </div>
+                            <div class="slider_link_1">
+                                <a href="#">круглосуточно</a>
+                            </div>
+                            <div class="slider_subtitle">Профессиональная мойка кузова и уходу за вашим автомобилем
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="red_button">Онлайн запись</a>
+                                <a href="#" class="dark_button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/complect_slideer.png" alt="">
+                        <div class="clider_in">
+                            <div class="slider_title">
+                                <span>автомойка</span> спартаковская 6
+                            </div>
+                            <div class="slider_link_1">
+                                <a href="#">круглосуточно</a>
+                            </div>
+                            <div class="slider_subtitle">Профессиональная мойка кузова и уходу за вашим автомобилем
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="red_button">Онлайн запись</a>
+                                <a href="#" class="dark_button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_container cards">
+            <div class="card_left">
+                <div class="card_item">
+                    <div class="card_title">
+                        <span>Современная</span> техническая
+                        база Avto City
+                    </div>
+                    <div class="cad_bg"></div>
+                    <div class="card_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                            <path
+                                d="M6.5 19.7384V32.2401C6.5 36.8334 6.5 36.8334 10.8333 39.7584L22.75 46.6484C24.5483 47.6884 27.4733 47.6884 29.25 46.6484L41.1667 39.7584C45.5 36.8334 45.5 36.8334 45.5 32.2618V19.7384C45.5 15.1668 45.5 15.1668 41.1667 12.2418L29.25 5.35178C27.4733 4.31178 24.5483 4.31178 22.75 5.35178L10.8333 12.2418C6.5 15.1668 6.5 15.1668 6.5 19.7384Z"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M26 32.5C29.5899 32.5 32.5 29.5899 32.5 26C32.5 22.4101 29.5899 19.5 26 19.5C22.4101 19.5 19.5 22.4101 19.5 26C19.5 29.5899 22.4101 32.5 26 32.5Z"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card_text">Передовые технологии в борьбе за идеальны вид авто</div>
+                </div>
+                <div class="card_item">
+                    <div class="card_title">
+                        <span>специалисты</span> <br>
+                        самой высокой
+                        квалификации
+                    </div>
+                    <div class="cad_bg"></div>
+                    <div class="card_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                            <path
+                                d="M45.6733 18.59V33.4099C45.6733 35.8366 44.3733 38.09 42.2717 39.325L29.4017 46.7567C27.3 47.97 24.7 47.97 22.5767 46.7567L9.70666 39.325C7.60499 38.1117 6.30499 35.8583 6.30499 33.4099V18.59C6.30499 16.1633 7.60499 13.9099 9.70666 12.6749L22.5767 5.24325C24.6783 4.02992 27.2783 4.02992 29.4017 5.24325L42.2717 12.6749C44.3733 13.9099 45.6733 16.1417 45.6733 18.59Z"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M26 23.8334C28.7881 23.8334 31.0484 21.5732 31.0484 18.7851C31.0484 15.9969 28.7881 13.7368 26 13.7368C23.2119 13.7368 20.9517 15.9969 20.9517 18.7851C20.9517 21.5732 23.2119 23.8334 26 23.8334Z"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M34.6667 36.0967C34.6667 32.1967 30.7883 29.0334 26 29.0334C21.2117 29.0334 17.3333 32.1967 17.3333 36.0967"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card_text">Все специалисты проходят тщательный отбор</div>
+                </div>
+            </div>
+            <div class="card_right">
+                <div class="card_item">
+                    <div class="card_title">
+                        <span>Полный спектр</span>
+                        программ <br> детейлинга
+                    </div>
+                    <div class="cad_bg"></div>
+                    <div class="card_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                            <path
+                                d="M33.605 6.13159H18.395C13 6.13159 11.8083 8.81826 11.115 12.1116L8.66666 23.8333H43.3333L40.885 12.1116C40.1917 8.81826 39 6.13159 33.605 6.13159Z"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M47.645 42.9433C47.8833 45.4783 45.8467 47.6666 43.2467 47.6666H39.1733C36.8333 47.6666 36.5083 46.6699 36.0967 45.4349L35.6633 44.1349C35.0567 42.3583 34.6667 41.1666 31.5467 41.1666H20.4533C17.3333 41.1666 16.8783 42.5099 16.3367 44.1349L15.9033 45.4349C15.4917 46.6699 15.1667 47.6666 12.8267 47.6666H8.75333C6.15333 47.6666 4.11667 45.4783 4.355 42.9433L5.56833 29.7483C5.87167 26.4983 6.5 23.8333 12.1767 23.8333H39.8233C45.5 23.8333 46.1283 26.4983 46.4317 29.7483L47.645 42.9433Z"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.66667 17.3333H6.5" stroke="#262626" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M45.5 17.3333H43.3333" stroke="#262626" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M26 6.5V10.8333" stroke="#262626" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22.75 10.8333H29.25" stroke="#262626" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M13 32.5H19.5" stroke="#262626" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M32.5 32.5H39" stroke="#262626" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card_text">Большой перечень услуг
+                        по мойке автомобиля и уходу</div>
+                </div>
+                <div class="card_item">
+                    <div class="card_title">
+                        <span>ГАРАНТИЯ</span> <br>
+                        СОХРАННОСТИ <br>
+                        ВАШЕГО АВТО
+                    </div>
+                    <div class="cad_bg"></div>
+                    <div class="card_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                            <path
+                                d="M16.2067 39.7583L22.9233 44.9583C23.79 45.825 25.74 46.2583 27.04 46.2583H35.2733C37.8733 46.2583 40.69 44.3083 41.34 41.7083L46.54 25.8917C47.6233 22.8583 45.6733 20.2583 42.4233 20.2583H33.7567C32.4567 20.2583 31.3733 19.175 31.59 17.6583L32.6733 10.725C33.1067 8.77501 31.8067 6.60835 29.8567 5.95835C28.1233 5.30835 25.9567 6.17501 25.09 7.47501L16.2067 20.6917"
+                                stroke="#262626" stroke-width="1.5" stroke-miterlimit="10" />
+                            <path
+                                d="M5.15666 39.7584V18.5251C5.15666 15.4918 6.45666 14.4084 9.49 14.4084H11.6567C14.69 14.4084 15.99 15.4918 15.99 18.5251V39.7584C15.99 42.7918 14.69 43.8751 11.6567 43.8751H9.49C6.45666 43.8751 5.15666 42.7918 5.15666 39.7584Z"
+                                stroke="#262626" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card_text">Передовые технологии в борьбе за идеальны вид авто</div>
+                </div>
+            </div>
+        </div>
+        <div class="main_container service_wrapper">
+            <div class="dark_title"><span>услуги</span> центра</div>
+            <div class="service_cards">
+                <div class="carvice_card">
+                    <img src="./images/service_card_1.png" alt="">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M7 21L21 7" stroke="white" stroke-width="1.58" stroke-linejoin="round" />
+                            <path d="M9.625 7H21V18.375" stroke="white" stroke-width="1.58" stroke-linecap="square"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <div class="card_subtitle">Только блеск и никаких царапин</div>
+                    <div class="card_title">Детейлинг</div>
+                </div>
+                <div class="carvice_card">
+                    <img src="./images/service_card_2.png" alt="">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M7 21L21 7" stroke="white" stroke-width="1.58" stroke-linejoin="round" />
+                            <path d="M9.625 7H21V18.375" stroke="white" stroke-width="1.58" stroke-linecap="square"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <div class="card_subtitle">Грамотное хранение шин</div>
+                    <div class="card_title">хранение шин</div>
+                </div>
+                <div class="carvice_card">
+                    <img src="./images/service_card_3.png" alt="">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M7 21L21 7" stroke="white" stroke-width="1.58" stroke-linejoin="round" />
+                            <path d="M9.625 7H21V18.375" stroke="white" stroke-width="1.58" stroke-linecap="square"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <div class="card_subtitle">Точное соблюдение всех норм</div>
+                    <div class="card_title">шиномонтаж</div>
+                </div>
+                <div class="carvice_card">
+                    <img src="./images/service_card_4.png" alt="">
+                    <a href="#" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M7 21L21 7" stroke="white" stroke-width="1.58" stroke-linejoin="round" />
+                            <path d="M9.625 7H21V18.375" stroke="white" stroke-width="1.58" stroke-linecap="square"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <div class="card_subtitle">Закрытая парковка в центре города</div>
+                    <div class="card_title">парковка</div>
+                </div>
+            </div>
+            <a href="#" class="main_link">
+                <span>Все услуги центра</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M4.375 14H22.625" stroke="#262626" stroke-width="1.5" stroke-linecap="square"
+                        stroke-linejoin="round" />
+                    <path d="M15.75 6.125L23.625 14L15.75 21.875" stroke="#262626" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <div class="service_bg"></div>
+    </section>
     <!-- End service -->
 
-    <section id="service2"></section>
+    <section id="service2">
+        <div class="main_container">
+            <div class="dark_title">
+                <span>ЗА 18 ЛЕТ</span> МЫ НАУЧИЛИСЬ ДЕЛАТЬ КРАСИВО
+            </div>
+            <ul class="tab_head">
+                <li>
+                    <a href="#" class="active">Все</a>
+                </li>
+                <li>
+                    <a href="#">ЭКСТЕРЬЕР</a>
+                </li>
+                <li>
+                    <a href="#">ИНТЕРЬЕР</a>
+                </li>
+                <li>
+                    <a href="#">кузов</a>
+                </li>
+                <li>
+                    <a href="#">мойка</a>
+                </li>
+            </ul>
+            <div class="tab_content">
+                <div class="tab_item">
+                    <div class="swiper tab_content_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_1.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Оклейка зон риска антигравийной пленкой </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_1.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Оклейка зон риска антигравийной пленкой </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_1.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Оклейка зон риска антигравийной пленкой </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M10 3L5 8L10 13" stroke="#262626" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="next_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="white" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="tab_item">
+                    <div class="swiper tab_content_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_2.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Детейлинг Полировка и защита керамикой</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_2.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Детейлинг Полировка и защита керамикой</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_2.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Детейлинг Полировка и защита керамикой</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M10 3L5 8L10 13" stroke="#262626" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="next_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="white" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="tab_item">
+                    <div class="swiper tab_content_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_3.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">ОклВосстановительная полировка и защита </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_3.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">ОклВосстановительная полировка и защита </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_3.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">ОклВосстановительная полировка и защита </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M10 3L5 8L10 13" stroke="#262626" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="next_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="white" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="tab_item">
+                    <div class="swiper tab_content_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_4.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Полная оклейка в полиуретановую пленку</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_4.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Полная оклейка в полиуретановую пленку</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tab_item_4.png" alt="">
+                                <div class="subtitle">Автомобиль Porsche Carrera GT</div>
+                                <div class="title">Полная оклейка в полиуретановую пленку</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M10 3L5 8L10 13" stroke="#262626" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="next_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="white" stroke-width="1.5" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="main_link">
+                <span>Все наши работы</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M4.375 14H22.625" stroke="#262626" stroke-width="1.5" stroke-linecap="square"
+                        stroke-linejoin="round" />
+                    <path d="M15.75 6.125L23.625 14L15.75 21.875" stroke="#262626" stroke-width="1.5"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </section>
 
     <!-- Applications -->
     <div class="application_in">
@@ -545,4 +1149,5 @@
     <!-- Add file -->
     <script src="./js/main.js"></script>
 </body>
+
 </html>
