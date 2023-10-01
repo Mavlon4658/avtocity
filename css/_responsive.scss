@@ -1,0 +1,312 @@
+@media (max-width: 1720px){
+    .application_img{
+        width: 450px;
+        left: 39%;
+    }
+}
+@media (max-width: 1500px){
+    .application_img{
+        width: 450px;
+        left: auto;
+        right: 5%;
+        top: 10%;
+    }
+    #applications{
+        .application_bg{
+            width: 100%;
+        }
+        .application_wrapper{
+            flex-direction: column;
+            .application_left{
+                margin-bottom: 20px;
+            }
+            .application_right{
+                display: flex;
+            }
+        }
+        .card_grey{
+            position: static;
+            width: 100%;
+        }
+        .card_red{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 1100px){
+    .application_img{
+        display: none;
+    }
+    #applications{
+        .application_wrapper{
+            .application_left{
+                display: flex;
+                .application_imgs{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .application_imgs{
+        display: block;
+    }
+}
+@media (max-width: 1060px){
+    #comment{
+        .comment_wrapper{
+            flex-wrap: wrap;
+            .comment_card{
+                // flex: 0;
+                flex: 100%;
+            }
+        }
+    } 
+}
+@media (max-width: 993px){
+    .light_title{
+        font-size: 48px;
+        span{
+            font-size: 48px;
+        }
+    }
+    #applications{
+        margin-bottom: 50px;
+        .card_grey{
+            width: 94%;
+            padding: 20px;
+            padding-left: 5%;
+            svg{
+                width: 40px;
+            }
+        }
+        .card_red{
+            width: 94%;
+            svg{
+                width: 40px;
+            }
+            padding: 20px;
+            padding-left: 5%;
+        }
+        .application_left{
+            padding-top: 80px;
+            .application_btns{
+                .playmarket_btn{
+                    padding: 20px;
+                }
+                .apple_btn{
+                    padding: 20px;
+                }
+            }
+        } 
+        .application_right{
+            flex-direction: column;
+            h3{
+                margin-top: 20px;
+                max-width: 250px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .main_container{
+        padding: 0 15px;
+    }
+    footer{
+        .footer_wrapper{
+            gap: 0;
+        }
+        .footer_block{
+            padding-top: 40px;
+            .square{
+                margin-bottom: 30px;
+            }
+            .apple{
+                margin-top: 0;
+            }
+        }
+    }
+    .dark_title{
+        font-size: 32px;
+        span{
+            font-size: 32px;
+        }
+    }
+    #center{
+        margin-top: 64px;
+        .center_wrapper{
+            .center_card{
+                .center_btn{
+                    width: 150px;
+                    height: 45px;
+                }
+            }
+        } 
+    }
+    #registration{
+        margin-top: 51px;
+        .registration_img{
+            background-color: rgba(23, 24, 12, 0.4);
+            left: 0;
+        }
+        .registration_wrapper::before{
+            content: '';
+            z-index: 1;
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(23, 21, 24, 0.6);
+        }
+        .registration_text{
+            .registration_title{
+                text-align: center;
+                margin: 0 auto;
+            }
+            .form{
+                margin-top: 20px;
+                align-items: center;
+                flex-direction: column;
+                .phone_input{
+                    width: 60%;
+                }
+                .data_input{
+                    width: 60%;
+                }
+                .form_btn{
+                    width: 60%;
+                }
+            }
+            .form_bottom{
+                margin-left: 0;
+            }
+        }
+    }  
+    #applications{
+        .application_left{
+            .application_title{
+                font-size: 32px;
+                span{
+                    font-size: 32px;
+                }
+            }
+            .application_btns{
+                .playmarket_btn{
+                    font-size: 9px;
+                    padding: 12px;
+                }
+                .apple_btn{
+                    font-size: 9px;
+                    padding: 12px;
+                }
+            } 
+        }
+        .application_right{
+            h3{
+                font-size: 16px;
+            }
+        }
+        .card_grey {
+            padding-left: 2%;
+        }
+        .card_red{
+            padding-left: 2%;
+        }
+    }
+}
+@media (max-width: 576px){
+    .dark_title{
+        font-size: 25px;
+        span{
+            font-size: 25px;
+        }
+    }
+    footer{
+        .footer_wrapper{
+            .footer_block_title{
+                font-size: 20px;
+            }
+        }
+    }
+    #comment{
+        .comment_wrapper{
+            .comment_card{
+                p{
+                    font-size: 16px;
+                }
+            }
+        } 
+        .comment_full{
+            .comment_full_btn{
+                padding: 20px;
+            }
+        }
+    }
+    #registration{
+        .registration_text{
+            .form{
+                flex-direction: column;
+                .phone_input{
+                    width: 100%;
+                    input{
+                        width: 80%;
+                    }
+                }
+                .data_input{
+                    width: 100%;
+                    input{
+                        width: 80%;
+                    }
+                }
+                .form_btn{
+                    width: 100%;
+                }
+            }
+            .form_bottom{
+                margin-left: 0;
+            }
+        }
+    }
+    #applications{
+        .application_left {
+            padding-top: 40px;
+            .application_title{
+                font-size: 25px;
+                span{
+                    font-size: 25px;
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 490px){
+    #applications{
+        .application_wrapper{
+            .application_left {
+                flex-direction: column;
+                padding-top: 40px;
+                .application_imgs{
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    .application_img_media{
+                        // margin: 0 auto;
+                        width: 60%;
+                    }
+                }
+                .application_title{
+                    margin-bottom: 20px;
+                    font-size: 25px;
+                    span{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    } 
+}
