@@ -57,7 +57,20 @@
         }
     }
 }
-
+@media (max-width: 1200px){
+    #service{
+        .cards{
+            gap: 40px;
+            flex-direction: column;
+            .card_left{
+                width: 100%;
+            }
+            .card_right{
+                width: 100%;
+            }
+        }
+    }
+}
 @media (max-width: 1100px){
     .application_img{
         display: none;
@@ -216,6 +229,41 @@
     } 
 }
 @media (max-width: 993px){
+    #service {
+        .cards{
+            margin-bottom: 64px;
+            .card_left,
+            .card_right{
+                .card_item{
+                    .card_title{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .service_wrapper{
+            .service_cards {
+                .carvice_card{
+                    .link{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    .card_title{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    #service2{
+        .tab_content{
+            .tab_item{
+                .swiper-slide{
+                    height: 200px;
+                }
+            }
+        }
+    }
     .light_title{
         font-size: 48px;
         span{
@@ -262,6 +310,23 @@
     }
 }
 @media (max-width: 768px){
+    #service{
+        .service_wrapper{
+            margin-bottom: 64px;
+            .main_link{
+                padding: 10px 20px;
+            }
+        }
+    }
+    #service2{
+        .tab_content{
+            .tab_item{
+                .swiper-slide{
+                    height: 300px;
+                }
+            }
+        }
+    }
     .main_container{
         padding: 0 15px;
     }
@@ -323,9 +388,15 @@
                 flex-direction: column;
                 .phone_input{
                     width: 60%;
+                    input{
+                        width: 85%;
+                    }
                 }
                 .data_input{
                     width: 60%;
+                    input{
+                        width: 85%;
+                    } 
                 }
                 .form_btn{
                     width: 60%;
@@ -337,6 +408,7 @@
         }
     }  
     #applications{
+        margin-top: 64px;
         .application_left{
             .application_title{
                 font-size: 32px;
@@ -367,8 +439,92 @@
             padding-left: 2%;
         }
     }
+    #service2{
+        .main_link{
+            width: 92%;
+        }
+        .tab_content{
+            flex-direction: column;
+            .tab_item{
+                width: 100%;
+            }
+        }
+    }
+
+}
+@media (max-width: 600px){
+    #service2{
+        .main_link{
+            width: 85%;
+        }
+    }
 }
 @media (max-width: 576px){
+    #service{
+        .cards{
+            .card_left{
+                flex-direction: column;
+                .card_item{
+                    width: 100%;
+                }
+            }
+            .card_right{
+                flex-direction: column;
+            }
+        }
+        .service_wrapper{
+            .dark_title{
+                margin-bottom: 20px;
+            }
+            .service_cards{
+                gap: 30px;
+                .carvice_card{
+                    .link{
+                        top: 190px;
+                        width: 45px;
+                        height: 45px;
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    width: 100%;
+                    .card_title{
+                        font-size: 20px;
+                    }
+                    .card_subtitle {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    #service2{
+        .main_link{
+            padding: 10px 20px;
+        }
+        .tab_head{
+            a{
+                font-size: 9px;
+                padding: 10px 13px;
+            }
+        }
+        .tab_content{
+            .tab_item{
+                .swiper-slide{
+                    height: 250px;
+                    .subtitle{
+                        margin-left: 10px;
+                    }
+                    .title{
+                        font-size: 12px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
     .dark_title{
         font-size: 25px;
         span{
@@ -392,7 +548,7 @@
         } 
         .comment_full{
             .comment_full_btn{
-                padding: 20px;
+                padding: 10px 20px;
             }
         }
     }
@@ -458,4 +614,49 @@
             }
         }
     } 
+}
+@media (max-width: 360px){
+    #service2{
+        .tab_head{
+            flex-wrap: wrap;
+            a{
+                margin-bottom: 2px;
+            }
+        }
+        .dark_title{
+            margin-bottom: 25px;
+        }
+        .tab_content{
+            .tab_item{
+                .swiper-slide{
+                    height: 200px;
+                }
+                .buttons{
+                    button{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+
+    }
+    #comment {
+        .comment_wrapper{
+            .comment_card {
+                .card_img{
+                    .card_icon{
+                        .card_icon_back{
+                            width: 35px;
+                            height: 35px;
+                        }
+                        .card_icon_next{
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

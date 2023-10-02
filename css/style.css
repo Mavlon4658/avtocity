@@ -12,7 +12,7 @@
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .main_container {
@@ -595,7 +595,7 @@ header .header_bottom .main_container .buttons .red_button {
   text-transform: uppercase;
 }
 #service .service_wrapper .main_link {
-  width: 642px;
+  max-width: 642px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1333,6 +1333,18 @@ footer .footer_wrapper_bottom p {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  #service .cards {
+    gap: 40px;
+    flex-direction: column;
+  }
+  #service .cards .card_left {
+    width: 100%;
+  }
+  #service .cards .card_right {
+    width: 100%;
+  }
+}
 @media (max-width: 1100px) {
   .application_img {
     display: none;
@@ -1458,6 +1470,23 @@ footer .footer_wrapper_bottom p {
   }
 }
 @media (max-width: 993px) {
+  #service .cards {
+    margin-bottom: 64px;
+  }
+  #service .cards .card_left .card_item .card_title,
+  #service .cards .card_right .card_item .card_title {
+    font-size: 18px;
+  }
+  #service .service_wrapper .service_cards .carvice_card .link {
+    width: 60px;
+    height: 60px;
+  }
+  #service .service_wrapper .service_cards .carvice_card .card_title {
+    font-size: 25px;
+  }
+  #service2 .tab_content .tab_item .swiper-slide {
+    height: 200px;
+  }
   .light_title {
     font-size: 48px;
   }
@@ -1502,6 +1531,15 @@ footer .footer_wrapper_bottom p {
   }
 }
 @media (max-width: 768px) {
+  #service .service_wrapper {
+    margin-bottom: 64px;
+  }
+  #service .service_wrapper .main_link {
+    padding: 10px 20px;
+  }
+  #service2 .tab_content .tab_item .swiper-slide {
+    height: 300px;
+  }
   .main_container {
     padding: 0 15px;
   }
@@ -1559,14 +1597,23 @@ footer .footer_wrapper_bottom p {
   #registration .registration_text .form .phone_input {
     width: 60%;
   }
+  #registration .registration_text .form .phone_input input {
+    width: 85%;
+  }
   #registration .registration_text .form .data_input {
     width: 60%;
+  }
+  #registration .registration_text .form .data_input input {
+    width: 85%;
   }
   #registration .registration_text .form .form_btn {
     width: 60%;
   }
   #registration .registration_text .form_bottom {
     margin-left: 0;
+  }
+  #applications {
+    margin-top: 64px;
   }
   #applications .application_left .application_title {
     font-size: 32px;
@@ -1591,8 +1638,72 @@ footer .footer_wrapper_bottom p {
   #applications .card_red {
     padding-left: 2%;
   }
+  #service2 .main_link {
+    width: 92%;
+  }
+  #service2 .tab_content {
+    flex-direction: column;
+  }
+  #service2 .tab_content .tab_item {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #service2 .main_link {
+    width: 85%;
+  }
 }
 @media (max-width: 576px) {
+  #service .cards .card_left {
+    flex-direction: column;
+  }
+  #service .cards .card_left .card_item {
+    width: 100%;
+  }
+  #service .cards .card_right {
+    flex-direction: column;
+  }
+  #service .service_wrapper .dark_title {
+    margin-bottom: 20px;
+  }
+  #service .service_wrapper .service_cards {
+    gap: 30px;
+  }
+  #service .service_wrapper .service_cards .carvice_card {
+    width: 100%;
+  }
+  #service .service_wrapper .service_cards .carvice_card .link {
+    top: 190px;
+    width: 45px;
+    height: 45px;
+  }
+  #service .service_wrapper .service_cards .carvice_card .link svg {
+    width: 25px;
+    height: 25px;
+  }
+  #service .service_wrapper .service_cards .carvice_card .card_title {
+    font-size: 20px;
+  }
+  #service .service_wrapper .service_cards .carvice_card .card_subtitle {
+    font-size: 14px;
+  }
+  #service2 .main_link {
+    padding: 10px 20px;
+  }
+  #service2 .tab_head a {
+    font-size: 9px;
+    padding: 10px 13px;
+  }
+  #service2 .tab_content .tab_item .swiper-slide {
+    height: 250px;
+  }
+  #service2 .tab_content .tab_item .swiper-slide .subtitle {
+    margin-left: 10px;
+  }
+  #service2 .tab_content .tab_item .swiper-slide .title {
+    font-size: 12px;
+    margin-left: 10px;
+  }
   .dark_title {
     font-size: 25px;
   }
@@ -1606,7 +1717,7 @@ footer .footer_wrapper_bottom p {
     font-size: 16px;
   }
   #comment .comment_full .comment_full_btn {
-    padding: 20px;
+    padding: 10px 20px;
   }
   #registration .registration_text .form {
     flex-direction: column;
@@ -1658,5 +1769,31 @@ footer .footer_wrapper_bottom p {
   }
   #applications .application_wrapper .application_left .application_title span {
     font-size: 25px;
+  }
+}
+@media (max-width: 360px) {
+  #service2 .tab_head {
+    flex-wrap: wrap;
+  }
+  #service2 .tab_head a {
+    margin-bottom: 2px;
+  }
+  #service2 .dark_title {
+    margin-bottom: 25px;
+  }
+  #service2 .tab_content .tab_item .swiper-slide {
+    height: 200px;
+  }
+  #service2 .tab_content .tab_item .buttons button {
+    width: 35px;
+    height: 35px;
+  }
+  #comment .comment_wrapper .comment_card .card_img .card_icon .card_icon_back {
+    width: 35px;
+    height: 35px;
+  }
+  #comment .comment_wrapper .comment_card .card_img .card_icon .card_icon_next {
+    width: 35px;
+    height: 35px;
   }
 }/*# sourceMappingURL=style.css.map */
