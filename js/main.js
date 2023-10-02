@@ -35,7 +35,6 @@ let complect_slider = new Swiper(".complect_slider", {
 });
 
 let tab_contents = document.querySelectorAll('#service2 .tab_item');
-console.log(tab_contents);
 if (tab_contents.length) {
     tab_contents.forEach(el => {
         let sliderEl = el.querySelector('.tab_content_slider');
@@ -60,4 +59,20 @@ bars.onclick = () => {
 bars2.onclick = () => {
     header_mobile.classList.remove('active');
     header_mobile.classList.add('noActive');
+}
+
+let comment_sliders = document.querySelectorAll('#comment .comment_card');
+if (comment_sliders.length) {
+    comment_sliders.forEach(el => {
+        let sliderEl = el.querySelector('.comment_slider');
+        let next = el.querySelector('.card_icon .card_icon_next')
+        let prev = el.querySelector('.card_icon .card_icon_back')
+        console.log(sliderEl);
+        let comment_slide = new Swiper(sliderEl, {
+            navigation: {
+                nextEl: next,
+                prevEl: prev,
+            },
+        });
+    })
 }

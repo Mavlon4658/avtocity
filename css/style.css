@@ -1,10 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "Steppe";
-  src: url("../fonts/Steppe.woff2") format("woff2"), url("../fonts/Steppe.otf") format("opentype");
+  src: url("../fonts/Steppe-Black.ttf");
+  src: local("Steppe Black"), local("Steppe-Black"), url("../fonts/Steppe-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-Black.woff2") format("woff2"), url("../fonts/Steppe-Black.woff") format("woff"), url("../fonts/Steppe-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-Book.eot");
+  src: local("Steppe Book"), local("Steppe-Book"), url("../fonts/Steppe-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-Book.woff2") format("woff2"), url("../fonts/Steppe-Book.woff") format("woff"), url("../fonts/Steppe-Book.ttf") format("truetype");
   font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-Bold.eot");
+  src: local("Steppe Bold"), local("Steppe-Bold"), url("../fonts/Steppe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-Bold.woff2") format("woff2"), url("../fonts/Steppe-Bold.woff") format("woff"), url("../fonts/Steppe-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-ExtraBold.eot");
+  src: local("Steppe Extra Bold"), local("Steppe-ExtraBold"), url("../fonts/Steppe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-ExtraBold.woff2") format("woff2"), url("../fonts/Steppe-ExtraBold.woff") format("woff"), url("../fonts/Steppe-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-SemiBold.eot");
+  src: local("Steppe Semi Bold"), local("Steppe-SemiBold"), url("../fonts/Steppe-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-SemiBold.woff2") format("woff2"), url("../fonts/Steppe-SemiBold.woff") format("woff"), url("../fonts/Steppe-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-Medium.eot");
+  src: local("Steppe Medium"), local("Steppe-Medium"), url("../fonts/Steppe-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-Medium.woff2") format("woff2"), url("../fonts/Steppe-Medium.woff") format("woff"), url("../fonts/Steppe-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-Thin.eot");
+  src: local("Steppe Thin"), local("Steppe-Thin"), url("../fonts/Steppe-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-Thin.woff2") format("woff2"), url("../fonts/Steppe-Thin.woff") format("woff"), url("../fonts/Steppe-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-Regular.eot");
+  src: local("Steppe Regular"), local("Steppe-Regular"), url("../fonts/Steppe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-Regular.woff2") format("woff2"), url("../fonts/Steppe-Regular.woff") format("woff"), url("../fonts/Steppe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Steppe";
+  src: url("../fonts/Steppe-Light.eot");
+  src: local("Steppe Light"), local("Steppe-Light"), url("../fonts/Steppe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Steppe-Light.woff2") format("woff2"), url("../fonts/Steppe-Light.woff") format("woff"), url("../fonts/Steppe-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -23,7 +88,7 @@
 
 .dark_title {
   color: #262626;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -33,7 +98,7 @@
 }
 .dark_title span {
   color: #CE021C;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -44,7 +109,7 @@
 
 .light_title {
   color: #FFF;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 58px;
   font-style: normal;
   font-weight: 900;
@@ -54,7 +119,7 @@
 }
 .light_title span {
   color: #CE021C;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 58px;
   font-style: normal;
   font-weight: 900;
@@ -191,6 +256,8 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #home .home_slider .swiper-slide {
   background: url("../images/home_bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 750px;
 }
 #home .home_slider .swiper-slide .subtitle {
@@ -343,7 +410,7 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #service .complect .complect_slider .swiper-slide .slider_title {
   color: #FFF;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 900;
@@ -357,7 +424,7 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #service .complect .complect_slider .swiper-slide .slider_title span {
   color: #CE021C;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 900;
@@ -450,7 +517,7 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #service .cards .card_left .card_item .card_title {
   color: #262626;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 900;
@@ -461,7 +528,7 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #service .cards .card_left .card_item .card_title span {
   color: #CE021C;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 900;
@@ -498,7 +565,7 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #service .cards .card_right .card_item .card_title {
   color: #262626;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 900;
@@ -509,7 +576,7 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #service .cards .card_right .card_item .card_title span {
   color: #CE021C;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 900;
@@ -586,7 +653,7 @@ header .header_bottom .main_container .buttons .red_button {
 #service .service_wrapper .service_cards .carvice_card .card_title {
   margin-left: 106px;
   color: #262626;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 900;
@@ -689,7 +756,7 @@ header .header_bottom .main_container .buttons .red_button {
 }
 #service2 .tab_content .tab_item .swiper-slide .title {
   color: #FFF;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 900;
@@ -799,7 +866,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
+  /* 16.8px */
   letter-spacing: 0.56px;
   text-transform: uppercase;
 }
@@ -818,7 +886,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
+  /* 16.8px */
   letter-spacing: 0.56px;
   text-transform: uppercase;
 }
@@ -833,11 +902,12 @@ header .header_bottom .main_container .buttons .red_button {
 #applications .application_right h3 {
   max-width: 235px;
   color: #FFF;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 900;
-  line-height: 110%; /* 24.2px */
+  line-height: 110%;
+  /* 24.2px */
   letter-spacing: -0.66px;
   text-transform: uppercase;
   margin-top: 34px;
@@ -866,21 +936,42 @@ header .header_bottom .main_container .buttons .red_button {
   gap: 20px;
 }
 #comment .comment_wrapper .comment_card {
-  flex: 1;
+  width: calc(33.3333333333% - 13.3333333333px);
 }
 #comment .comment_wrapper .comment_card .card_img {
   position: relative;
+  width: 100%;
+}
+#comment .comment_wrapper .comment_card .card_img .comment_slider {
+  width: 100%;
+  z-index: 1;
 }
 #comment .comment_wrapper .comment_card .card_img img {
+  height: 256px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #comment .comment_wrapper .comment_card .card_img .card_icon {
   display: flex;
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
-#comment .comment_wrapper .comment_card .card_img .card_icon .card_icon_back {
+#comment .comment_wrapper .comment_card .card_img .card_icon div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  background-color: #fff;
+}
+#comment .comment_wrapper .comment_card .card_img .card_icon div svg path {
+  stroke: black;
+}
+#comment .comment_wrapper .comment_card .card_img .card_icon .swiper-button-disabled {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -889,14 +980,8 @@ header .header_bottom .main_container .buttons .red_button {
   cursor: pointer;
   background: #CE021C;
 }
-#comment .comment_wrapper .comment_card .card_img .card_icon .card_icon_next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
-  background-color: #fff;
+#comment .comment_wrapper .comment_card .card_img .card_icon .swiper-button-disabled svg path {
+  stroke: white;
 }
 #comment .comment_wrapper .comment_card .card_content {
   height: 320px;
@@ -927,16 +1012,18 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 16.8px */
+  line-height: 140%;
+  /* 16.8px */
   margin-bottom: 5px;
 }
 #comment .comment_wrapper .comment_card .card_title .card_title_text h2 {
   color: #262626;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 900;
-  line-height: 110%; /* 19.8px */
+  line-height: 110%;
+  /* 19.8px */
   letter-spacing: -0.54px;
   text-transform: uppercase;
   margin-bottom: 28px;
@@ -951,7 +1038,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 25.2px */
+  line-height: 140%;
+  /* 25.2px */
   margin-bottom: 27px;
 }
 #comment .comment_wrapper .comment_card .card_btn {
@@ -961,7 +1049,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 14.4px */
+  line-height: 120%;
+  /* 14.4px */
   letter-spacing: 0.48px;
   text-transform: uppercase;
 }
@@ -980,7 +1069,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
+  /* 16.8px */
   letter-spacing: 0.56px;
   text-transform: uppercase;
 }
@@ -1040,7 +1130,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
+  /* 16.8px */
   letter-spacing: 0.56px;
   text-transform: uppercase;
 }
@@ -1070,7 +1161,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
+  /* 16.8px */
   letter-spacing: 0.56px;
   text-transform: uppercase;
   background: #CE021C;
@@ -1084,7 +1176,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 12px */
+  line-height: 120%;
+  /* 12px */
   letter-spacing: 0.3px;
 }
 #registration .registration_text .form_bottom svg {
@@ -1119,11 +1212,12 @@ header .header_bottom .main_container .buttons .red_button {
 #center .center_wrapper .center_card .location .location_text h3 {
   margin-top: 25px;
   color: #262626;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 900;
-  line-height: 110%; /* 19.8px */
+  line-height: 110%;
+  /* 19.8px */
   letter-spacing: -0.54px;
   text-transform: uppercase;
   margin-bottom: 7px;
@@ -1134,7 +1228,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
+  /* 19.2px */
   letter-spacing: 0.16px;
   margin-bottom: 19px;
 }
@@ -1150,7 +1245,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 21.6px */
+  line-height: 120%;
+  /* 21.6px */
 }
 #center .center_wrapper .center_card .call_center .call_line {
   height: 1px;
@@ -1164,7 +1260,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
+  /* 19.2px */
   letter-spacing: 0.16px;
 }
 #center .center_wrapper .center_card .center_btn {
@@ -1174,7 +1271,8 @@ header .header_bottom .main_container .buttons .red_button {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 14.4px */
+  line-height: 120%;
+  /* 14.4px */
   letter-spacing: 0.48px;
   text-transform: uppercase;
   width: 172px;
@@ -1213,11 +1311,12 @@ footer .footer_block .square {
 }
 footer .footer_block .footer_block_title {
   color: #262626;
-  font-family: "Steppe", Georgia;
+  font-family: "Steppe", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 900;
-  line-height: 110%; /* 24.2px */
+  line-height: 110%;
+  /* 24.2px */
   letter-spacing: -0.66px;
   text-transform: uppercase;
   margin-bottom: 33px;
@@ -1233,7 +1332,8 @@ footer .footer_block .footer_logo_company {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
+  /* 16.8px */
   letter-spacing: 0.56px;
   text-transform: uppercase;
   margin-bottom: 36px;
@@ -1268,7 +1368,8 @@ footer .footer_block .footer_item a {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
+  /* 19.2px */
   letter-spacing: 0.16px;
 }
 footer .footer_block .footer_item a svg {
@@ -1286,7 +1387,8 @@ footer .footer_wrapper_bottom p {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 14.4px */
+  line-height: 120%;
+  /* 14.4px */
 }
 
 @media (max-width: 1720px) {
@@ -1334,15 +1436,62 @@ footer .footer_wrapper_bottom p {
   }
 }
 @media (max-width: 1200px) {
+  #service .complect {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 200px;
+  }
+  #service .complect .left_complect {
+    position: relative;
+    width: 100%;
+  }
+  #service .complect .left_complect .dark_title {
+    max-width: 100%;
+  }
+  #service .complect .left_complect .buttons {
+    position: absolute;
+    top: 480px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    gap: 0;
+  }
+  #service .complect .complect_slider {
+    width: 100%;
+  }
   #service .cards {
     gap: 40px;
     flex-direction: column;
   }
   #service .cards .card_left {
     width: 100%;
+    gap: 30px;
+  }
+  #service .cards .card_left .card_item {
+    width: 100%;
+  }
+  #service .cards .card_left .card_item .card_title {
+    height: 45px;
+  }
+  #service .cards .card_left .card_item .cad_bg {
+    top: 72px;
   }
   #service .cards .card_right {
     width: 100%;
+    gap: 30px;
+  }
+  #service .cards .card_right .card_item {
+    width: 100%;
+  }
+  #service .cards .card_right .card_item .card_title {
+    height: 45px;
+  }
+  #service .cards .card_right .card_item .cad_bg {
+    background: #f6f6f6;
+    top: 72px;
+  }
+  #service .service_bg {
+    display: none;
   }
 }
 @media (max-width: 1100px) {
@@ -1530,7 +1679,54 @@ footer .footer_wrapper_bottom p {
     font-size: 18px;
   }
 }
+@media (max-width: 960px) {
+  #service .complect .left_complect .buttons {
+    top: 530px;
+  }
+}
 @media (max-width: 768px) {
+  header .header_mobile .close_header_mobile {
+    top: 10px;
+    right: 20px;
+  }
+  #home .home-swiper-pagination {
+    bottom: 50px;
+    transform: translate(0, 0);
+    left: 10px;
+  }
+  #home .home-slider-buttons {
+    bottom: 20px;
+  }
+  #service .complect {
+    padding-top: 50px;
+  }
+  #service .complect .left_complect .dark_title {
+    margin-bottom: 30px;
+  }
+  #service .complect .left_complect .buttons {
+    top: 450px;
+  }
+  #service .complect .complect_slider .swiper-slide {
+    height: 330px;
+  }
+  #service .complect .complect_slider .swiper-slide .slider_title {
+    font-size: 28px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  #service .complect .complect_slider .swiper-slide .slider_title span {
+    font-size: 28px;
+  }
+  #service .complect .complect_slider .swiper-slide .slider_link_1 {
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+  #service .complect .complect_slider .swiper-slide .buttons {
+    width: 100%;
+  }
+  #service .complect .complect_slider .swiper-slide .buttons .red_button, #service .complect .complect_slider .swiper-slide .buttons .dark_button {
+    width: 50%;
+  }
   #service .service_wrapper {
     margin-bottom: 64px;
   }
@@ -1554,6 +1750,12 @@ footer .footer_wrapper_bottom p {
   }
   footer .footer_block .apple {
     margin-top: 0;
+  }
+  .light_title {
+    font-size: 32px;
+  }
+  .light_title span {
+    font-size: 32px;
   }
   .dark_title {
     font-size: 32px;
