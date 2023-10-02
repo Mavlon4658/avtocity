@@ -49,3 +49,15 @@ if (tab_contents.length) {
         });
     })
 }
+
+let bars = document.querySelector('header .header_mobile_bars');
+let bars2 = document.querySelector('header .header_mobile .close_header_mobile')
+let header_mobile = document.querySelector('header .header_mobile');
+bars.onclick = () => {
+    header_mobile.classList.remove('noActive');
+    header_mobile.classList.add('active');
+}
+bars2.onclick = () => {
+    header_mobile.classList.remove('active');
+    header_mobile.classList.add('noActive');
+}

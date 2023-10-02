@@ -17,6 +17,10 @@ $Steppe: "Steppe", Georgia;
     padding: 0;
 }
 
+.d-none {
+    display: none;
+}
+
 .main_container {
     max-width: 1424px;
     padding: 0px 50px;
@@ -241,7 +245,7 @@ header {
     .home-swiper-pagination {
         position: absolute;
         width: auto;
-        z-index: 5;
+        z-index: 2;
         display: flex;
         align-items: center;
         gap: 22px;
@@ -282,7 +286,7 @@ header {
     .home-slider-buttons {
         position: absolute;
         bottom: 164px;
-        z-index: 5;
+        z-index: 2;
         
         button {
             width: 80px;
@@ -855,6 +859,9 @@ header {
     }
 }
 
+.application_in {
+    position: relative;
+}
 .application_img{
     position: absolute;
     left: 41%;
